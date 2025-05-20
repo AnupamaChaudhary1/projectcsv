@@ -11,7 +11,11 @@ def create_table():
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             name TEXT NOT NULL,
             age INTEGER,
-            email TEXT NOT NULL
+            address TEXT,
+            phone INTEGER,
+            email TEXT NOT NULL UNIQUE
         )
         """)
+
         conn.commit()
+
